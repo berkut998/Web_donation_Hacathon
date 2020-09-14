@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style/sttyles.css">
+    <link rel="stylesheet" type="text/css" href="/style/buttonstyle.css">
+</head>
+  <body > 
+        <div class="container">
+            <form>
+                <div class="form-group" style="margin-top: 2%;">
+                    <img  class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" src="Assets/Images/test1.jpg" alt="">
+                </div>
+                <div class="form-group">
+                    <h5 id="titleOfCollection">Добряши помогают котикам</h5>
+                    <label class="Author" id="Author" style="margin: auto;">Автор Матвей Правосудов</label>
+                    <label id="titleOfCollection"  class="myLable" >Сбор закончится через 5 дней</label>     
+                  </div>
+              
+                <div class="form-group">
+                <label for="formGroupExampleInput2" id="DataBefore" style="color: black;">Нужно собрать до 10 сентября</label>       
+                   <div class="progress" style="height: 1.75rem;">
+                       <div class="progress-bar" role="progressbar" id="Amount" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">8950₽ из 10000₽</div>
+                   </div>            
+                  </div>
+                  <div class="form-group">
+                    <p id="Description">
+                        Привет-привет, добряш!
+
+                        Я создал это событие, чтобы показать какие у меня прекрасные добряши и буду счастлив, если получится вдохновить кого-нибудь хотя бы на маленький перевод в пользу фонда Юна. 
+
+                        ◾ Если получится собрать 1 000 рублей, то это будет 5 обработанных животных от блох и клещей.
+
+                        ◾ Собранные 5 000 рублей превратятся в 25 кг корма для подопечных фонда.
+
+                        ◾ А 10 000 рублей позволят провести курс занятий с кинологом по социализации сложной собаки. Чтобы она легче нашла свой дом.
+
+                        В благотворительности не бывает маленьких сумм, поэтому если вы хотите помочь, то переведите любую сумму, будь-то 10 рублей или 1000 💚
+                    </p>
+                  </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <img src="Assets/Images/like_outline_24.svg"  class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">51
+                            <img src="Assets/Images/comment_outline_24.svg"  class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">22
+                            <img src="Assets/Images/share_outline_24.svg"  class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">16
+                        </div>
+                        <div class="col-*" style="margin-right: 3%;">
+                            <img src="Assets/Images/view.svg" margin="5px" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">250
+                        </div>
+                    </div>                   
+                </div>
+              </form>
+                <div class="row h-50">
+                  <div class="col my-auto" style="margin-bottom: 0; padding-right: 0;" >
+                      <img src="Assets/Images/Avatar.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                  </div>
+                    <div class="col my-auto" style="padding: 0;">
+                        <div class="row">
+                            <h6 style="margin-bottom: 0; font-weight: bold;">Алексей Мазалюк</h6>
+                        </div>
+                        <div class="row">
+                        </div>                     
+                            <h6>Отправил.</h6>
+                        </div>
+                    <div class="col my-auto">
+                        <p style="margin-bottom: 0;">15 мин</p>
+                    </div>
+                    <div class="col-* my-auto" style="margin-right: 3%;">
+                      <img src="Assets/Images/like_outline_24.svg"  class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">2
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-2 my-auto">
+                        <img src="Assets/Images/Avatar1.png"  class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                    </div>
+                    <div class="col-10 my-auto">
+                        <div class="form-group">
+                          <input type="text" class="form-control " placeholder="">
+                        </div>
+                    </div>
+                </div>    
+                <div class="row  h-50">
+                    <div class="col-8 my-auto">
+                        <div class="progress align-middle">
+                            <div  class="important!align-bottom progress-bar " id="Amount" role="progressbar" style="width: 75%; " aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">8950₽ из 10000₽</div>
+                        </div>     
+                    </div>
+                    <div class="col-4  my-auto">
+                        <button type="button" onclick="ToIndex()" class="btn btn-primary">Помочь</button>
+                    </div>
+                </div>          
+            </div>
+        </div>
+    
+    
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+     createCollection()
+   });
+   </script>
+ 
+   <script>
+     function ToIndex()
+     {
+         localStorage.clear();
+         location.replace("index.html");
+     }
+ 
+     function createCollection()
+     {
+         console.log(localStorage.EndData);
+             if (localStorage.name === undefined)
+                 document.getElementById("titleOfCollection").innerHTML = localStorage.name;
+             if (localStorage.description === undefined)
+                 document.getElementById("Description").innerHTML = localStorage.description;
+             if (localStorage.author === undefined)
+                 document.getElementById("Author").innerHTML = localStorage.author;
+             if (localStorage.amount === undefined)
+             {
+                 var money = "8950₽ из " + localStorage.amount + "₽";
+                 document.getElementById("Amount").innerHTML = money;;
+                 document.getElementById("moneyNeed").innerHTML = money;
+             }
+            //  if (localStorage.EndData != undefined)
+            //  {
+                //  var date = localStorage.EndData;
+                //  var need = "Нужно собрать до " +  date;
+                //  document.getElementById("DataBefore").innerHTML = need;;
+            //  }
+
+             
+     }
+ </script>
+
+</html>

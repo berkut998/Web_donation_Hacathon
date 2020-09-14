@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style/sttyles.css">
+    <link rel="stylesheet" type="text/css" href="/style/buttonstyle.css">
+    <link rel="stylesheet" type="text/css" href="/style/loadFileStyle.css">
+</head>
+  <body>
+      <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center" >
+                        <h5 >
+                            Регулярный сбор
+                        </h5>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <div class="file-upload">              
+                        
+                            <div class="image-upload-wrap">
+                              <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                              <div class="drag-text">
+                                <h4>Загрузить обложку</h4>
+                              </div>
+                            </div>
+                            <div class="file-upload-content">
+                              <img class="file-upload-image" src="#" alt="your image" />                    
+                            </div>
+                          </div>
+                      </div>              
+                </div>               
+
+                <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Название сбора</label>
+                  <input type="" class="form-control" id="NameOfCollection" placeholder="Название сбора">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Сумма в месяц, ₽</label>
+                  <input type="" class="form-control" id="Amount" placeholder="Сколько нужно в месяц?">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Цель</label>
+                    <input type="" class="form-control" id="Target"  placeholder="Например, поддержка приюта">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Описание</label>
+                    <textarea class="form-control" name="" id="Description" rows="3" placeholder="На что пойдут деньги и как они кому-то помогут?"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Куда получать деньги</label>
+                    <input type=""  value="Счет VK Pay 1234" class="form-control"  id="BankAccount" placeholder="Счет">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Автор</label>
+                    <input type="" value="Матвей Правосудов" class="form-control" id="Author" placeholder="Автор">
+                </div>
+              </form>
+                <div class="row">
+                    <div class="col text-center" >
+                        <button type="button" onclick="openResultOfCreation()" class="btn btn-primary btn-lg btn-block">Далее</button>
+                    </div>
+                </div>
+              
+            </div>
+      </header>  
+    </div>
+    
+    
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+
+  <script>
+    function openResultOfCreation()
+    {
+        localStorage.name = document.getElementById("NameOfCollection").value;
+        localStorage.target = document.getElementById("Target").value;
+        localStorage.description = document.getElementById("Description").value;
+        localStorage.author = document.getElementById("Author").value;
+        localStorage.amount = document.getElementById("Amount").value;
+        location.replace("ResultRegularCollection.html") ;
+    }
+
+    function readURL(input) {
+  if (input.files && input.files[0]) {
+
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('.image-upload-wrap').hide();
+
+      $('.file-upload-image').attr('src', e.target.result);
+      $('.file-upload-content').show();
+
+      $('.image-title').html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+
+  } else {
+    removeUpload();
+  }
+}
+
+function removeUpload() {
+  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+  $('.file-upload-content').hide();
+  $('.image-upload-wrap').show();
+}
+$('.image-upload-wrap').bind('dragover', function () {
+        $('.image-upload-wrap').addClass('image-dropping');
+    });
+    $('.image-upload-wrap').bind('dragleave', function () {
+        $('.image-upload-wrap').removeClass('image-dropping');
+});
+</script>
+
+<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+</html>
