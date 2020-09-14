@@ -1,0 +1,47 @@
+.fitsrPage
+{
+    height: 50vh;
+}
+
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h5
+{
+    margin-top: 2%;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-control
+{
+    border-radius: .75rem; 
+    background-color: #F2F3F5; 
+    color: #000000;
+    font-size: 1.125rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.custom-control-label
+{
+    color: #000000;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.myLable
+{
+    color: #76808C;
+    margin:auto;
+}
+
+.author
+{
+    color: #76808C;
+    margin:auto;
+    font-weight: bold;
+}
+
+label
+{
+    color: #76808C;
+}
+
